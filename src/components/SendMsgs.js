@@ -31,7 +31,9 @@ const SendMsgs = () => {
                     placeholder="Message here ..."
                     className='input'
                 />
-                <Button type="submit" sx={{ backgroundColor: 'blue', color: 'white', padding: '10px' }}>Send</Button>
+             
+                  <Button type="submit" sx={{ backgroundColor: 'blue', color: 'white', padding: '10px' }}>Send</Button>
+             
             </form>
         </>
     );

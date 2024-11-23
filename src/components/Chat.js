@@ -28,7 +28,7 @@ const Chat = () => {
     }, []); // Empty dependency array to run this effect only once when the component mounts
 
     return (
-        <div>
+        <div className="container">
             <Signout />
 
             {/* Display the messages */}
@@ -45,9 +45,12 @@ const Chat = () => {
 
                 ))
             }
-             <SendMsgs />
+             <SendMsgs className="send-msg-container"/>
         </div>
-    );
+    ); 
 };
 
 export default Chat;
+
+
+

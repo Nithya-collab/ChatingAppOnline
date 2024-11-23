@@ -1,0 +1,136 @@
+/* General container styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray for background */
+}
+/* 
+div {
+    margin: 0;
+    padding: 0;
+   
+} */
+
+/* Message container */
+.msg {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 40%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* Sent messages */
+/* .sent {
+    align-self: flex-start;
+    background-color: #dcf8c6;
+    border: 1px solid #c4e7b2;
+} */
+
+.sent {
+    margin-left: auto; /* Push the message to the right */
+    background-color: #dcf8c6; /* WhatsApp green */
+    color: #000; /* Black text */
+    border: 1px solid #c4e7b2; /* Light green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    max-width: 40%; /* Constrain message width */
+    word-wrap: break-word; /* Ensure long text wraps */
+    margin-bottom: 10px; /* Add spacing between messages */
+}
+
+
+/* Received messages */
+.received {
+    align-self: flex-start;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Message content */
+.msg-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Message text */
+.msg-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Message image (profile picture) */
+.msg-content span img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+/* Input box for typing messages */
+.input{
+    width: 60%;
+    padding: 12px;
+    /* margin: 50px auto; */
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Send button */
+button {
+    position: relative;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #34b7f1; /* WhatsApp blue for button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #27a3d4;
+}
+
+/* Signout button */
+.signout {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(108, 108, 255); /* Red color for signout */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.signout:hover {
+    background-color: #1f6ac0;
+}
+
+/* Adjusting for responsive design */
+@media screen and (max-width: 768px) {
+    .msg {
+        max-width: 80%; /* Allow more width on smaller screens */
+    }
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
